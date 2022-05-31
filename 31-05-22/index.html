@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- title-->
+    <title>My One Page</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="picture/favicon.png" />
+
+    <!-- Turkce karakter -->
+    <meta charset="utf-8">
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- seo -->
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+    <meta name="description"
+        content="one pages, html5,css3,js,jquery,bootstrap,javase,spring boot,spring mvc,spring data, spring security,spring rest,postgresql,seo" />
+    <meta name="author" content="Hamit Mızrak" />
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Font awesome
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jquery ui  css and js    -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- external js -->
+    <script src="template.js"></script>
+
+</head>
+
+<body data-target=".navbar" data-offset="44" data-spy="scroll">
+    <!-- start codes -->
+
+    <!-- navbar start -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="picture/favicon.png" id="logo_id"/>
+            </a>
+            <!-- button toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Anasayfa <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special_aboutme">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Product
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special_ability">Ability</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special_contact">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                            data-target="#login_register">
+                            <i class="fa-solid fa-id-card"></i>Login
+                        </button>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0 ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Arama</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- modal-register start -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="login_register" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-register ends -->
+
+    <!-- header start -->
+    <header>
+        <div class="jumbotron text-white bg-dark">
+            <div class="container" style="opacity:.9">
+                <!-- div.p-5.text-center.text-white.bg-dark>h1.mb-3{Heading}+h4.mb-3{sub title}+a.btn.btn-primary.{More..} -->
+                <div class="p-5 text-center text-white bg-dark">
+                    <h1 class="mb-3">Türkcel Full Stack Eğitimine Hoşgeldiniz</h1>
+                    <h4 class="mb-3">Html Css Rv Bootstrap</h4>
+                    <a href="" class="btn btn-primary">More..</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+
+    <!-- main start -->
+    <main>
+        <section>
+        <!-- card -->
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p class="display-4 text-center text-uppercase mb-4">Ürünler</p>
+                <div class="row" id="main_card_header_bottom">
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./picture/1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./picture/2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./picture/3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./picture/1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+
+
+            <!-- about-me -->
+            <div class="container" id="special_aboutme">
+                <p class="display-4 text-center text-uppercase mb-4 mt-5">Hakkımızda</p>
+                <div class="row">
+                   
+                    <div class="col-md-7">
+                        <img src="picture/2.jpg" alt="" style="width:40rem;">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="line_clamp16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia
+                            quasi, ipsum ullam officiis, at commodi assumenda enim adipisci doloribus beatae nihil iure
+                            odio natus, laborum repellat corporis quo. Necessitatibus?
+                            Repudiandae minima voluptate unde laborum beatae dolores doloribus natus fuga inventore.
+                            Officia, impedit repudiandae eveniet eligendi pariatur </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- main ends -->
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <!-- footer start -->
+    <footer class="text-white text-center">
+        <div class="container p-4"> <!--container start-->
+             <!-- Social Media -->
+            <section class="mb-4 ">
+               
+                <a href="#" class="btn btn-outline-primary btn-floating m-1"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-warning btn-floating m-1"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="#" class="btn btn-outline-success btn-floating m-1"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="btn btn-outline-info btn-floating m-1"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fa-brands fa-github-alt"></i></a>
+            </section>
+
+            <!-- Form -->
+            <section class="mt-1">
+                <form action="#" method="post">
+                    <!-- text -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-3 text-white"><i class="fa-solid fa-envelopes-bulk text-primary"></i>
+                                <strong>Bize Yazın</strong></p>
+                        </div>
+                    </div>
+
+                        <!-- input -->
+                    <div class="col-md-6 col-12">
+                        <div class="form-outline-white mb-3">
+                            <input type="email" class="form-control" id="sendLetter"/>
+                            <label for="sendLetter" class="form-label">Email</label>
+                        </div>
+                    </div>
+
+                   <div class="col-auto">
+                       <button class="btn btn-outline-success mb-3">Send</button>
+                    </div>
+                </form> 
+            </section>
+
+            <section class="mb-3" style="text-align: justify;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est officia velit nam repellat reiciendis
+                     voluptate aliquid consequuntur ad autem ullam quis saepe corporis maxime, enim minima ut earum sed beatae
+                      commodi! Culpa itaque impedit dignissimos ullam! Labore, neque quasi!</p>
+            </section>
+
+            <!-- linkler vereceğiz -->
+            <section>
+                <section class="on mt-2">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <h5 class="text-uppercase">Web Link</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li> <a href="#" class="text-white">Workstation-1</a> </li>
+                                <li> <a href="#" class="text-white">Workstation-2</a</li>
+                                <li> <a href="#" class="text-white">Workstation-3</a</li>
+                                <li> <a href="#" class="text-white">Workstation-4</a</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <h5 class="text-uppercase">Web Link</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li> <a href="#" class="text-white">Workstation-1</a> </li>
+                                <li> <a href="#" class="text-white">Workstation-2</a</li>
+                                <li> <a href="#" class="text-white">Workstation-3</a</li>
+                                <li> <a href="#" class="text-white">Workstation-4</a</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <h5 class="text-uppercase">Web Link</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li> <a href="#" class="text-white">Workstation-1</a> </li>
+                                <li> <a href="#" class="text-white">Workstation-2</a</li>
+                                <li> <a href="#" class="text-white">Workstation-3</a</li>
+                                <li> <a href="#" class="text-white">Workstation-4</a</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <h5 class="text-uppercase">Web Link</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li> <a href="#" class="text-white">Workstation-1</a> </li>
+                                <li> <a href="#" class="text-white">Workstation-2</a</li>
+                                <li> <a href="#" class="text-white">Workstation-3</a</li>
+                                <li> <a href="#" class="text-white">Workstation-4</a</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <div class="text-center p-4" style="background-color: rgba(0,0,0,0.6);"> @2022 Copyright:
+                 <a class="text-white" href="https://hamitmizrak.com.tr">YO</a> </div>
+
+        </div> <!--container end-->
+    </footer>
+    <!-- footer ends -->
+
+    <!-- ends codes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>

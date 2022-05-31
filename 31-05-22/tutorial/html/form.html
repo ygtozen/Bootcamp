@@ -1,0 +1,91 @@
+<!-- html -->
+<!DOCTYPE html>
+
+<!-- Dil -->
+<html lang="en">
+
+<!-- seracrh engine -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bu web sitesini kim yaptı -->
+    <meta name="aouthor" content="Yiğit Özen Turkcell"/>
+    <meta name="aouthor" content="property"/>
+    
+    <!-- Browser üzerinde gürülen kısım -->
+    <title>Html5</title>
+
+    <!-- başlığa resim koyma favicon -->
+    <link rel="shortcut icon" href="../picture/resim.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- form -->
+    <form action="form.html" method="get" autocomplete="on">
+
+        <div>
+            <label for="adi">Adınız :</label> <!--for içine adi yazıyoroz adi ile bağlamak için-->
+            <input type="text" id="adi" placeholder="Adınızı yazınız" required autofocus/>
+        </div>
+        <div>
+            <label for="email">Email : </label> 
+            <input type="email" id="email" placeholder="Adınızı yazınız" required/>
+        </div>
+        <div>
+            <label for="password">Password : </label> 
+            <input type="password" id="password" placeholder="Adınızı yazınız" required/>
+        </div>
+        <div>
+            <!-- for için, kim için çalışacağım -->
+            <input type="radio" id="bayan" name="radio" checked/>
+            <label for="bayan">Bayan</label>
+
+            <input type="radio" id="erkek" name="radio"/>
+            <label for="erkek">Erkek</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="html" name="html" />
+            <label for="html">Html</label> <br>
+
+            <input type="checkbox" id="css" name="html" />
+            <label for="css">css</label> <br>
+
+            <input type="checkbox" id="js" name="html" />
+            <label for="js">js</label> <br>
+
+            <input type="checkbox" id="java" name="html" />
+            <label for="java">java</label> <br>
+        </div>
+
+        <br><br>
+
+        <div>
+            <select name="backend_data" id="data" >
+                <option value="0">Seçiniz</option>
+                <option value="backend_javase">Javase</option>
+                <option value="backend_javaee">Javaee</option>
+                <option value="backend_javame">Javame</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div>
+            <textarea cols="45" rows="6"></textarea>
+        </div>
+
+
+        <div>
+            <input type="reset" value="Temizle">
+            <input type="submit" value="Değer gönder">
+        </div>
+
+    </form>
+
+</body>
+</html>
