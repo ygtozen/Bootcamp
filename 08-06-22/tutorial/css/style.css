@@ -1,0 +1,220 @@
+/* external css*/
+
+*{  /*bütün tag'lara eriş*/
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+        width:200px; border:10px padding:20px;
+        200+10*2+20*2=260px'lik bir yapı sınar
+    */
+}
+
+p{
+    color: orange;
+}
+
+#data_id{
+    color: purple;
+}
+
+.data_class{
+    color: blue;
+}
+
+#div_id{
+    color: black;
+    color: orange;
+    color: rgb(0, 0, 0, 0.3);
+    color: #abc;
+    color: #abc123;
+
+    background: black;
+
+    /* padding : iç boşluk*/
+    padding: 12px;
+    /* padding: 4px 6px 12px 24px; */
+    /* padding: 12px 24px; ya - ss */
+    /* padding-top: 24px; */
+
+    /*margin dış boşluk*/
+    margin: 12px;
+
+    border: 3px solid blue;
+    /* border-radius: 50%; */
+    border-bottom-left-radius: 15%;
+}
+
+.paragraf{
+    font-size: 25px; 
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif; /* yazı tipi */
+    /* text-align: right; */
+    text-decoration: underline; /*altını çizer*/
+    text-decoration: line-through; /*üstünü çizer*/
+    text-decoration: none;
+    text-transform: capitelize;
+
+    text-indent: 12px; /* paragraf satır başı*/
+
+    word-spacing: 10px; /*kelime arasında boşluk bırakam*/
+    letter-spacing: 2px; /*harfler arasındaki boşluk*/
+    line-height: 2; /*satır arası boşluk bırakır*/
+    column-count: 3; /* yan yan parçala böler 3 parça*/
+    column-rule: 10px solid red; /*paraçalar arasına çizgi koydu*/
+    margin: 0 25px;
+
+    
+}
+
+i{
+    color: blue;
+    font-size: 85px;
+}
+
+#div_a a{
+    color: yellow;
+    background: blue;
+    /* width: 25%; */
+    /* display: block; alt alta
+    display: inline; yan yana */
+    display: inline-block; /*width ile birlikte çalışır*/
+    /* display: none; */
+    text-decoration: none;
+    border: 1px solid red;
+    margin: 2px 4px;
+}
+
+.clear:before{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#img_id{
+    float: left;
+    margin-right: 15px;
+    
+}
+
+#img_id:hover{
+    transform: rotate(180deg);
+}
+
+#float_paragraf{
+    padding-left: 10px;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: none ; /* noktaları kaldırdı*/
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+ul li{
+    display: inline;
+    text-transform: uppercase; /*büyük harfe çevirdi*/
+    color: white;
+    background: black;
+    padding: 4px 3px;
+}
+
+ul li:hover{ /* üstüne geldiğimiz zaman*/
+    box-shadow: 1px 5px 10px rgba(216,48,48,.8);
+    cursor: pointer;
+    transition: 2s all;
+    
+}
+
+header{
+    background-image: url("../picture/resim2.jpg");
+    height: 75vh; /*gözümüzün yüzde 75lik kısmı*/
+    background-position: center; /* resmi ortaladı*/
+    background-size: cover;
+}
+
+.box{
+    width: 20%;
+    height: 250px;
+    background: red;
+    display: inline-block;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 3px 1px black;
+    transition: 2s all;
+    transform: rotate(360deg);
+}
+
+/* min-width : en az 100 ve üzeri ise bunları yap */
+@media screen and (min-width: 100px){
+    .box{
+        width: 100%;
+        height: 250px;
+        background: red;
+        display: inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+        
+    }
+}
+
+/*  600 <= x <= 299 */
+@media screen and (min-width: 600px){
+    .box{
+        width: 49%;
+        height: 150px;
+        background: red;
+        display: inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+        
+    }
+}
+
+/* 900 <= X < 1199 */
+@media screen and (min-width: 900px){
+    .box{
+        width: 32.8%;
+        height: 150px;
+        background: red;
+        display: inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+        
+    }
+}
+
+/* x >= 1200 */
+@media screen and (min-width: 1200px){
+    .box{
+        width: 32.8%;
+        height: 150px;
+        background: red;
+        display: inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+
+    }
+}
